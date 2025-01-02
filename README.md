@@ -5,7 +5,7 @@ This website is designed to help with exam preparation in cryptography and netwo
 ## Usage
 
 1. Download or clone the repository.
-2. Open `exam-study-guide.html` in a web browser to start reading.
+2. Open `index.html` in a web browser to start reading.
 
 ## Live Site 
 
