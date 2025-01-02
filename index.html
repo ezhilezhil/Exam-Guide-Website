@@ -54,38 +54,54 @@
 </header>
 
 <section>
-    <h2>1. Wireless Security, Cloud Security, Web Security</h2>
+    <h2>1. Caesar Cipher, Monoalphabetic Cipher, Playfair Cipher, Hill Cipher, Polyalphabetic Substitution</h2>
     <ul>
-        <li><strong>Wireless Security:</strong> Protects wireless networks and communications using encryption protocols like WPA2/WPA3 and authentication methods to secure Wi-Fi and other wireless systems.</li>
-        <li><strong>Cloud Security:</strong> Ensures the security of data and infrastructure in cloud services using encryption, secure APIs, and access control mechanisms to protect data stored and processed in the cloud.</li>
-        <li><strong>Web Security:</strong> Protects websites and web applications from attacks like SQL injection and XSS using HTTPS, secure coding, and firewalls to prevent unauthorized access and data breaches.</li>
+        <li><strong>Caesar Cipher:</strong> A substitution cipher where each letter in the plaintext is shifted by a certain number of positions in the alphabet. It’s easy to break with brute-force attacks.</li>
+        <li><strong>Monoalphabetic Cipher:</strong> A cipher where each letter in the plaintext is substituted with another letter, but each substitution is fixed. It’s more secure than the Caesar cipher but can still be cracked through frequency analysis.</li>
+        <li><strong>Playfair Cipher:</strong> A digraph substitution cipher that encrypts pairs of letters. It uses a 5x5 matrix of letters and applies substitution rules to pairs of letters in the plaintext.</li>
+        <li><strong>Hill Cipher:</strong> A polygraphic substitution cipher that encrypts a block of text at a time using linear algebra and matrix multiplication. It requires a square matrix as the key.</li>
+        <li><strong>Polyalphabetic Substitution:</strong> A cipher that uses multiple substitution alphabets to encrypt the plaintext, making it more resistant to frequency analysis compared to monoalphabetic ciphers.</li>
     </ul>
 </section>
 
 <section>
-    <h2>2. SQL Injection and Keyloggers</h2>
+    <h2>2. Types of Security Attacks</h2>
     <ul>
-        <li><strong>SQL Injection:</strong> A vulnerability where an attacker injects malicious SQL queries into a database through input fields, leading to unauthorized data access. Prevent using prepared statements and input validation.</li>
-        <li><strong>Keyloggers:</strong> Malicious software or hardware designed to record keystrokes and steal sensitive data like passwords and credit card numbers. Prevent using antivirus software, encryption, and secure input methods.</li>
+        <li><strong>Passive Attack:</strong> Involves monitoring or eavesdropping on communications without altering the data (e.g., sniffing or traffic analysis).</li>
+        <li><strong>Active Attack:</strong> Involves modifying or disrupting communications or data (e.g., man-in-the-middle, denial of service, or phishing attacks).</li>
     </ul>
 </section>
 
 <section>
-    <h2>3. RSA Cryptosystem</h2>
+    <h2>3. DES (Data Encryption Standard)</h2>
+    <ul>
+        <li><strong>DES:</strong> A symmetric encryption algorithm that encrypts data in 64-bit blocks using a 56-bit key, applying 16 rounds of substitution and permutation to ensure security.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. AES (Advanced Encryption Standard)</h2>
+    <ul>
+        <li><strong>AES:</strong> A symmetric encryption algorithm that encrypts data in 128-bit blocks using key sizes of 128, 192, or 256 bits. It uses a substitution-permutation network for security.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. RSA Cryptosystem</h2>
     <ul>
         <li><strong>RSA:</strong> A widely used asymmetric encryption algorithm based on the difficulty of factoring large prime numbers. It uses a public key for encryption and a private key for decryption.</li>
     </ul>
 </section>
 
 <section>
-    <h2>4. Diffie-Hellman Key Exchange</h2>
+    <h2>6. Diffie-Hellman Key Exchange</h2>
     <ul>
         <li><strong>Diffie-Hellman:</strong> A method for securely exchanging cryptographic keys over a public channel. It allows two parties to generate a shared secret key without transmitting it directly.</li>
     </ul>
 </section>
 
 <section>
-    <h2>5. Euler Totient Function, Eucler's Theorem, Chinese Remainder Theorem</h2>
+    <h2>7. Euler Totient Function, Eucler's Theorem, Chinese Remainder Theorem</h2>
     <ul>
         <li><strong>Euler Totient Function:</strong> Counts integers that are coprime with a number n. Formula: φ(n) = n * ∏(1 - 1/p), where p is prime factors of n.</li>
         <li><strong>Eucler's Theorem:</strong> States that for coprime integers a and n, a^φ(n) ≡ 1 (mod n), where φ(n) is Euler's Totient Function.</li>
@@ -94,30 +110,33 @@
 </section>
 
 <section>
-    <h2>6. SHA (Secure Hash Algorithm)</h2>
+    <h2>8. SHA (Secure Hash Algorithm)</h2>
     <ul>
         <li><strong>SHA:</strong> A family of cryptographic hash functions designed to ensure data integrity. Includes versions like SHA-1 (160-bit), SHA-2 (224, 256, 384, 512-bit), and SHA-3 (Keccak-based).</li>
     </ul>
 </section>
 
 <section>
-    <h2>7. Digital Signature Standard (DSS)</h2>
+    <h2>9. Digital Signature Standard (DSS)</h2>
     <ul>
         <li><strong>DSS:</strong> A standard for digital signatures, ensuring data authenticity using algorithms like DSA, RSA, and ECDSA. It helps to secure communications and data integrity.</li>
     </ul>
 </section>
 
 <section>
-    <h2>8. DES (Data Encryption Standard)</h2>
+    <h2>10. Wireless Security, Cloud Security, Web Security</h2>
     <ul>
-        <li><strong>DES:</strong> A symmetric encryption algorithm that encrypts data in 64-bit blocks using a 56-bit key, applying 16 rounds of substitution and permutation to ensure security.</li>
+        <li><strong>Wireless Security:</strong> Refers to measures to secure wireless networks and prevent unauthorized access, including encryption protocols like WPA and WPA2.</li>
+        <li><strong>Cloud Security:</strong> Involves securing data, applications, and services hosted on the cloud, ensuring privacy, availability, and integrity through encryption and access controls.</li>
+        <li><strong>Web Security:</strong> Encompasses techniques and measures to secure web applications and protect against threats like cross-site scripting (XSS), SQL injection, and man-in-the-middle attacks.</li>
     </ul>
 </section>
 
 <section>
-    <h2>9. AES (Advanced Encryption Standard)</h2>
+    <h2>11. SQL Injection, Keyloggers</h2>
     <ul>
-        <li><strong>AES:</strong> A symmetric encryption algorithm that encrypts data in 128-bit blocks using key sizes of 128, 192, or 256 bits. It uses a substitution-permutation network for security.</li>
+        <li><strong>SQL Injection:</strong> A type of attack where malicious SQL queries are inserted into input fields, allowing attackers to execute arbitrary SQL commands and potentially manipulate or access the database.</li>
+        <li><strong>Keyloggers:</strong> A type of malware that records keystrokes on a device, allowing attackers to capture sensitive information such as passwords and credit card numbers.</li>
     </ul>
 </section>
 
