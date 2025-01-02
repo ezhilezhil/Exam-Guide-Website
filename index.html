@@ -3,162 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Security Topics - SQL Injection, Keyloggers, and More</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Exam Study Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Cyber Security Topics</h1>
-        <nav>
-            <ul>
-                <li><a href="#sql-injection">SQL Injection</a></li>
-                <li><a href="#keyloggers">Keyloggers</a></li>
-                <li><a href="#wireless-security">Wireless Security</a></li>
-                <li><a href="#cloud-security">Cloud Security</a></li>
-                <li><a href="#web-security">Web Security</a></li>
-                <li><a href="#rsa-cryptosystem">RSA Cryptosystem</a></li>
-                <li><a href="#diffie-hellman">Diffie Hellman</a></li>
-                <li><a href="#digital-signature">Digital Signature Standard</a></li>
-                <li><a href="#sha">SHA</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="sql-injection">
-            <h2>1. What is SQL Injection?</h2>
-            <p><strong>Answer:</strong> SQL Injection is a cyber attack that exploits vulnerabilities in a web application's database query execution. It allows attackers to manipulate the application's SQL queries by injecting malicious SQL code into input fields.</p>
+<header>
+    <h1>Exam Study Guide</h1>
+    <p>Prepare for your exam with the following topics</p>
+</header>
 
-            <h3>2. How does SQL Injection work?</h3>
-            <p><strong>Answer:</strong> SQL Injection works by injecting malicious SQL code into user input fields. For example, an attacker might input `' OR '1'='1` to bypass authentication or access sensitive data in the database.</p>
+<section>
+    <h2>1. Wireless Security, Cloud Security, Web Security</h2>
+    <ul>
+        <li><strong>Wireless Security:</strong> Protects wireless networks and communications using encryption protocols like WPA2/WPA3 and authentication methods to secure Wi-Fi and other wireless systems.</li>
+        <li><strong>Cloud Security:</strong> Ensures the security of data and infrastructure in cloud services using encryption, secure APIs, and access control mechanisms to protect data stored and processed in the cloud.</li>
+        <li><strong>Web Security:</strong> Protects websites and web applications from attacks like SQL injection and XSS using HTTPS, secure coding, and firewalls to prevent unauthorized access and data breaches.</li>
+    </ul>
+</section>
 
-            <h3>3. What are the impacts of SQL Injection?</h3>
-            <ul>
-                <li>Unauthorized access to sensitive data.</li>
-                <li>Data theft, modification, or deletion.</li>
-                <li>Potential compromise of the entire database.</li>
-            </ul>
+<section>
+    <h2>2. SQL Injection and Keyloggers</h2>
+    <ul>
+        <li><strong>SQL Injection:</strong> A vulnerability where an attacker injects malicious SQL queries into a database through input fields, leading to unauthorized data access. Prevent using prepared statements and input validation.</li>
+        <li><strong>Keyloggers:</strong> Malicious software or hardware designed to record keystrokes and steal sensitive data like passwords and credit card numbers. Prevent using antivirus software, encryption, and secure input methods.</li>
+    </ul>
+</section>
 
-            <h3>4. How can SQL Injection attacks be prevented?</h3>
-            <ul>
-                <li>Use parameterized queries or prepared statements.</li>
-                <li>Validate and sanitize user inputs.</li>
-                <li>Implement proper error handling to avoid exposing database details.</li>
-            </ul>
-        </section>
+<section>
+    <h2>3. RSA Cryptosystem</h2>
+    <ul>
+        <li><strong>RSA:</strong> A widely used asymmetric encryption algorithm based on the difficulty of factoring large prime numbers. It uses a public key for encryption and a private key for decryption.</li>
+    </ul>
+</section>
 
-        <section id="keyloggers">
-            <h2>5. What are Keyloggers?</h2>
-            <p><strong>Answer:</strong> Keyloggers are malicious software or hardware devices designed to record every keystroke made on a device. They are often used to capture sensitive information such as passwords and credit card numbers.</p>
+<section>
+    <h2>4. Diffie-Hellman Key Exchange</h2>
+    <ul>
+        <li><strong>Diffie-Hellman:</strong> A method for securely exchanging cryptographic keys over a public channel. It allows two parties to generate a shared secret key without transmitting it directly.</li>
+    </ul>
+</section>
 
-            <h3>6. How do Keyloggers work?</h3>
-            <p><strong>Answer:</strong> Keyloggers operate in the background, monitoring and recording all keyboard input. They can be:
-                <ul>
-                    <li><strong>Software-based</strong>: Installed as malware on a device.</li>
-                    <li><strong>Hardware-based</strong>: Attached as physical devices like USBs or keyboard connectors.</li>
-                </ul>
-            </p>
+<section>
+    <h2>5. Euler Totient Function, Eucler's Theorem, Chinese Remainder Theorem</h2>
+    <ul>
+        <li><strong>Euler Totient Function:</strong> Counts integers that are coprime with a number n. Formula: φ(n) = n * ∏(1 - 1/p), where p is prime factors of n.</li>
+        <li><strong>Eucler's Theorem:</strong> States that for coprime integers a and n, a^φ(n) ≡ 1 (mod n), where φ(n) is Euler's Totient Function.</li>
+        <li><strong>Chinese Remainder Theorem:</strong> Provides a way to solve a system of congruences when moduli are pairwise coprime, ensuring a unique solution modulo the product of moduli.</li>
+    </ul>
+</section>
 
-            <h3>7. What are the impacts of Keyloggers?</h3>
-            <ul>
-                <li>Compromise of sensitive information (e.g., passwords, financial data).</li>
-                <li>Facilitation of identity theft.</li>
-                <li>Potential access to corporate or personal accounts.</li>
-            </ul>
+<section>
+    <h2>6. SHA (Secure Hash Algorithm)</h2>
+    <ul>
+        <li><strong>SHA:</strong> A family of cryptographic hash functions designed to ensure data integrity. Includes versions like SHA-1 (160-bit), SHA-2 (224, 256, 384, 512-bit), and SHA-3 (Keccak-based).</li>
+    </ul>
+</section>
 
-            <h3>8. How can Keylogger attacks be prevented?</h3>
-            <ul>
-                <li>Use anti-keylogging and updated antivirus software.</li>
-                <li>Avoid entering sensitive information on public or shared devices.</li>
-                <li>Regularly update device security patches.</li>
-            </ul>
-        </section>
+<section>
+    <h2>7. Digital Signature Standard (DSS)</h2>
+    <ul>
+        <li><strong>DSS:</strong> A standard for digital signatures, ensuring data authenticity using algorithms like DSA, RSA, and ECDSA. It helps to secure communications and data integrity.</li>
+    </ul>
+</section>
 
-        <section id="wireless-security">
-            <h2>9. What is Wireless Security?</h2>
-            <p><strong>Answer:</strong> Wireless security protects wireless communication from unauthorized access and malicious attacks.</p>
+<section>
+    <h2>8. DES (Data Encryption Standard)</h2>
+    <ul>
+        <li><strong>DES:</strong> A symmetric encryption algorithm that encrypts data in 64-bit blocks using a 56-bit key, applying 16 rounds of substitution and permutation to ensure security.</li>
+    </ul>
+</section>
 
-            <h3>10. What are common threats to wireless security?</h3>
-            <ul>
-                <li>Eavesdropping, unauthorized access, and denial of service (DoS).</li>
-            </ul>
+<section>
+    <h2>9. AES (Advanced Encryption Standard)</h2>
+    <ul>
+        <li><strong>AES:</strong> A symmetric encryption algorithm that encrypts data in 128-bit blocks using key sizes of 128, 192, or 256 bits. It uses a substitution-permutation network for security.</li>
+    </ul>
+</section>
 
-            <h3>11. How can wireless security be enhanced?</h3>
-            <ul>
-                <li>Use WPA3 encryption.</li>
-                <li>Enable MAC address filtering.</li>
-                <li>Set strong passwords for Wi-Fi networks.</li>
-            </ul>
-        </section>
+<footer>
+    <p>&copy; 2025 Study Guide</p>
+</footer>
 
-        <section id="cloud-security">
-            <h2>12. What is Cloud Security?</h2>
-            <p><strong>Answer:</strong> Cloud security ensures the protection of data, applications, and infrastructure in cloud environments.</p>
-
-            <h3>13. What are common threats to cloud security?</h3>
-            <ul>
-                <li>Data breaches, insecure APIs, and insider threats.</li>
-            </ul>
-
-            <h3>14. How can cloud security be enhanced?</h3>
-            <ul>
-                <li>Implement data encryption.</li>
-                <li>Use multi-factor authentication.</li>
-                <li>Conduct regular security audits.</li>
-            </ul>
-        </section>
-
-        <section id="web-security">
-            <h2>15. What is Web Security?</h2>
-            <p><strong>Answer:</strong> Web security focuses on safeguarding websites and web applications from cyber threats.</p>
-
-            <h3>16. What are common web security threats?</h3>
-            <ul>
-                <li>Cross-Site Scripting (XSS), SQL Injection, and Distributed Denial of Service (DDoS).</li>
-            </ul>
-
-            <h3>17. How can web security be improved?</h3>
-            <ul>
-                <li>Use HTTPS for secure communication.</li>
-                <li>Implement firewalls and intrusion detection systems.</li>
-                <li>Follow secure coding practices.</li>
-            </ul>
-        </section>
-
-        <section id="rsa-cryptosystem">
-            <h2>18. What is RSA Cryptosystem?</h2>
-            <p><strong>Answer:</strong> RSA is a widely-used public-key encryption system that relies on the mathematical difficulty of factoring large numbers.</p>
-
-            <h3>19. How does RSA work?</h3>
-            <ul>
-                <li>RSA generates a pair of keys: a public key for encryption and a private key for decryption.</li>
-            </ul>
-        </section>
-
-        <section id="diffie-hellman">
-            <h2>20. What is Diffie Hellman Key Exchange?</h2>
-            <p><strong>Answer:</strong> Diffie-Hellman is a method for securely exchanging cryptographic keys over a public channel.</p>
-
-            <h3>21. How does Diffie-Hellman work?</h3>
-            <ul>
-                <li>It allows two parties to generate a shared secret key without exchanging the key itself.</li>
-            </ul>
-        </section>
-
-        <section id="digital-signature">
-            <h2>22. What is Digital Signature Standard (DSS)?</h2>
-            <p><strong>Answer:</strong> DSS is a standard for creating and verifying digital signatures, ensuring authenticity and integrity of messages or documents.</p>
-        </section>
-
-        <section id="sha">
-            <h2>23. What is SHA (Secure Hash Algorithm)?</h2>
-            <p><strong>Answer:</strong> SHA is a cryptographic hash function designed to take an input and produce a fixed-size hash value. It's widely used for data integrity and digital signatures.</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Cyber Security Info. All rights reserved.</p>
-    </footer>
 </body>
 </html>
